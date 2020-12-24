@@ -15388,7 +15388,8 @@ a.text-yellow-600:hover, a.text-yellow-600:focus {
 body {
   padding-top: 55px;
   color: #772400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden; }
 
 :root {
   --navbar-height: 55px; }
@@ -15467,7 +15468,7 @@ ol, ul {
     margin-right: 5px; }
 
 .logo {
-  background: url(/assets/images/logo.svg) no-repeat;
+  background: url(../images/logo.svg) no-repeat;
   width: 121px;
   height: 55px; }
 

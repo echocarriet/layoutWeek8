@@ -26,21 +26,7 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   }
-}); //錨點
-// $(document).ready(function () {
-//   $("a").click(function () {
-//     console.log($(this).attr("href"))
-//     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-//     $body.animate({
-//       scrollTop: $($(this).attr("href")).offset().top + "px"
-//     }, {
-//       duration: 500,
-//       easing: "swing"
-//     });
-//     return false;
-//   });
-// });
-
+});
 $(document).ready(function () {
   // 動態切換圖片 (servieDetail.html)
   $('.carousel-inner-link').click(function () {
@@ -59,6 +45,8 @@ $(document).ready(function () {
     startDate: '-1m',
     endDate: '+10d',
     todayHighlight: true
-  });
+  }); // AOS
+
+  AOS.init();
 });
 //# sourceMappingURL=all.js.map
