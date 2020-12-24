@@ -46,7 +46,10 @@ $(document).ready(function () {
     todayHighlight: true
   });
   // AOS
-  AOS.init();
+  AOS.init({
+    offset: 200,
+    duration: 600,
+  });
 
 });
 
