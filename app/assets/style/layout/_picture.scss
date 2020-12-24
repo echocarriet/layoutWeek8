@@ -1,0 +1,134 @@
+//--------------index
+//header
+.header{    
+    &-img{    
+        @media (min-width: 576px) and (max-width: 767px){
+            max-width: 210px;
+            height: 288px;
+        }
+    }
+}
+
+.masonryCard{
+    //要搭配 bg-cover w-100使用
+    &-img{ 
+        height: 132px;
+        @include media-breakpoint-up(2sm) {
+            height: 210px;
+        }
+        @include media-breakpoint-up(md) {
+            height: 350px;
+        }  
+    }
+    &-imgSplit{
+        display: none;
+        @include media-breakpoint-up(md) {
+            height: 350px;
+        }
+    }
+    &-imgSplit-item{
+        height: 132px;
+        @include media-breakpoint-up(2sm) {
+            height: 210px;
+        }
+    }
+}
+
+//PETPET目前已有
+.onlinenumbrer{
+    &-pic{
+        height: 812px ;
+        @include media-breakpoint-up(md){
+            height: 584px;
+        }
+    }
+}
+
+//--------------member
+.member{
+    &-img{
+        width: 95px;
+        height: 95px;
+        display: block;
+    }
+}
+
+//--------------service
+.service{    
+    &-bannerimg{
+        height: 352px;
+        @include media-breakpoint-up(md){
+            height: 315px;
+        }
+    }
+    &-homestayimg{
+        height:128px;
+    }
+}
+
+//--------------service Setail
+.carousel{
+    &-item-img--active{
+        height: 282px;
+        @include media-breakpoint-up(md){
+            height: 221px;
+        }
+        @include media-breakpoint-up(lg){
+            height: 440px;
+        }
+    }
+    &-inner{
+        display: flex;
+    }
+    &-inner-img{
+        width: 82px;
+        height: 82px;
+        @include media-breakpoint-up(md){
+            width: 63px;
+            height: 63px;
+        }
+        @include media-breakpoint-up(lg){
+            width: 96px;
+            height: 96px;
+        }
+    }
+}
+.breeder{
+    &-img{
+        width: 60px;
+    }
+}
+//--------------reserve
+
+.reserve{
+    &-checkItem{
+        width: 72px;
+        height: 72px;
+        @include media-breakpoint-up(md){
+            width: 128px;
+            height: 128px;            
+        }
+    }
+}
+
+
+//--------------reserve2
+.reserve{    
+    &-img{
+        height: 100px;
+        @include media-breakpoint-up(md){
+            height: 150px;
+        }
+        @include media-breakpoint-up(lg){
+            height: 282px;
+        }
+        
+    }
+}
+
+//
+.successpage{
+    &-img{
+        width: 40px;
+    }
+}

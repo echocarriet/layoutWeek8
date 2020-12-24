@@ -1,0 +1,51 @@
+//header
+.form-controlClose{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    // color:$gray-600;
+    // background-color: #fff;
+    background-clip: padding-box;
+    // border: 1px solid #ced4da;
+}
+.form-border{
+    &-tLbL{
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem; 
+        @include media-breakpoint-down(md) {
+            border-radius: .25rem;  
+        }  
+    }
+    &-tRbR{
+        border-top-right-radius: .25rem;
+        border-bottom-right-radius: .25rem; 
+        @include media-breakpoint-down(md) {              
+            border-radius: .25rem;
+        }    
+    }
+    &-all{
+        border-radius: 0;
+        @include media-breakpoint-down(md){
+            border-radius: .25rem;
+        }
+    }
+
+}
+
+//線上預約
+.masonryCard{
+    &-title{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+        white-space: nowrap;
+        z-index: 999;
+    }
+}
+
+

@@ -1,0 +1,63 @@
+---
+title: 登入
+loginMenu: true
+memberMenu: false
+Footer: false
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container-fluid px-0 py-13 py-md-0">
+    <div class="row no-gutters">
+        <div class="col-md-5">
+            <img class="img-cover w-100 windows-100vh d-none d-md-block" src="assets/images/index-1.png" alt="">
+        </div>
+        <div class="col-md-7">
+            <div class="row no-gutters h-100 justify-content-center align-items-center">
+                <div class="col-10">
+                    <h1 class="tetx-3xl font-weight-bold mb-6 mb-md-13">登入</h1>
+                    <form action="#">
+                        <div class="form-group">
+                            <label class="text-dark" for="loginEmail">電子信箱</label>
+                            <input type="email" class="form-control font-weight-light py-6" id="loginEmail"
+                                aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-dark" for="loginPassword">密碼</label>
+                            <input type="password" class="form-control font-weight-light py-6"
+                                id="loginPassword" placeholder="請輸入密碼" required>
+                            <a class="text-sm text-gray-600" href="#" id="emailHelp">忘記密碼</a>
+                        </div>
+                        <div class="form-group form-check d-flex align-items-center">
+                            <input type="checkbox" class="form-check-input" id="loginCheck">
+                            <label class="form-check-label text-dark" for="loginCheck">記住我的帳號</label>
+                        </div>
+                        <div class="row mb-11 text-center">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <a href="#"
+                                    class="d-flex justify-content-center align-items-center border border-gray-400 rounded hover-shandow-sm">
+                                    <img src="assets/images/facebook.svg" alt="Facebook icon">
+                                    <p class="text-gray-600 align-middle d-inline-block mb-0" href="#">
+                                        Facebook
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#"
+                                    class="d-flex justify-content-center align-items-center border border-gray-400 rounded hover-shandow-sm">
+                                    <img src="assets/images/google.svg" alt="Google icon">
+                                    <p class="text-gray-600 align-middle d-inline-block mb-0" href="#">
+                                        Google
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100 w-md-40 mb-2">登入</button>
+                        <a class="text-secondary text-sm d-block" href="#">還沒註冊嗎 ?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

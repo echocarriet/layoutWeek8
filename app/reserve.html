@@ -1,0 +1,145 @@
+---
+title: 預約項目
+loginMenu: true
+memberMenu: false
+Footer: false
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="bg-gray-530 py-11 py-md-13 pb-lg-15 px-4">
+    <section class="container rounded bg-gray-100 pt-13 pb-12">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="row align-items-center position-relative">
+                    <!-- 預約資料 Title -->
+                    <div class="col-lg-8 mb-9 order-1 order-md-0">
+                        <h1 class="text-xl font-weight-bold">預約資訊</h1>
+                    </div>
+                    <!-- Form -->
+                    <div class="col-lg-8 mb-3 mb-md-10 order-3 order-md-2">
+                        <form>
+                            <div class="d-flex justify-content-between mb-7">
+                                <label for="room">
+                                    <input class="d-none" type="checkbox" id="room">
+                                    <div
+                                        class="reserve-checkItem d-flex flex-column justify-content-center align-items-center shadow-sm text-gray-530 bg-white rounded">
+                                        <i class="fas fa-home text-2xl text-md-4xl mb-1 mb-md-2"></i>
+                                        <p class="mb-0">住宿</p>
+                                    </div>
+                                </label>
+                                <label for="beauty">
+                                    <input class="d-none" type="checkbox" id="beauty">
+                                    <div
+                                        class="reserve-checkItem d-flex flex-column justify-content-center align-items-center shadow-sm text-gray-530 bg-white rounded">
+                                        <i class="fas fa-hand-sparkles text-2xl text-md-4xl mb-1 mb-md-2"></i>
+                                        <p class="mb-0">美容</p>
+                                    </div>
+                                </label>
+                                <label for="babysitter">
+                                    <input class="d-none" type="checkbox" id="babysitter">
+                                    <div
+                                        class="reserve-checkItem d-flex flex-column justify-content-center align-items-center shadow-sm text-gray-530 bg-white rounded">
+                                        <i class="fas fa-house-user text-2xl text-md-4xl mb-1 mb-md-2"></i>
+                                        <p class="mb-0">到府保姆</p>
+                                    </div>
+                                </label>
+                                <label for="walkbabysitter">
+                                    <input class="d-none" type="checkbox" id="walkbabysitter">
+                                    <div
+                                        class="reserve-checkItem d-flex flex-column justify-content-center align-items-center shadow-sm text-gray-530 bg-white rounded">
+                                        <i class="fas fa-walking text-2xl text-md-4xl mb-1 mb-md-2"></i>
+                                        <p class="mb-0">遛狗保姆</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- 選擇日期 -->
+                            <label class="text-dark" for="datepickerStart">選擇日期</label>
+                            <div class="form-row text-dark mb-5">
+                                <div class="col-md-5 d-flex align-items-center mb-2 mb-md-0">
+                                    <input class="form-control w-80 w-md-90 mr-2" type="text" id="datepickerStart">
+                                    <span class="w-20 w-md-10">至</span>
+                                </div>
+                                <div class="col-md-7 d-flex align-items-center">
+                                    <input class="form-control w-80 mr-2" type="text" id="datepickerEnd">
+                                    <span class="w-20">共1晚</span>
+                                </div>
+                            </div>
+                            <!-- 毛小孩數量年齡 -->
+                            <div class="form-row text-dark">
+                                <div class="form-group col-4 col-md-2">
+                                    <label for="petNum">毛小孩數量</label>
+                                    <select id="petNum" class="form-control">
+                                        <option selected>1隻</option>
+                                        <option>2隻</option>
+                                        <option>3隻</option>
+                                        <option>4隻以上</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4 col-md-3">
+                                    <label for="petName">您的毛小孩是</label>
+                                    <select id="petName" class="form-control">
+                                        <option selected>貓</option>
+                                        <option>狗</option>
+                                        <option>兔子</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4 col-md-3">
+                                    <label for="petAge">年齡</label>
+                                    <select id="petAge" class="form-control">
+                                        <option selected>1歲</option>
+                                        <option>2歲</option>
+                                        <option>3歲</option>
+                                        <option>4歲</option>
+                                        <option>5歲</option>
+                                        <option>6歲</option>
+                                        <option>7歲以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- payline -->
+                    <div class="col-lg-8 order-0 order-md-3">
+                        <ul class="payline d-flex">
+                            <li class="payline-item text-dark font-weight-light px-4 px-2sm-10">預約項目</li>
+                            <li class="payline-item text-dark font-weight-bold px-4 px-2sm-10">預約資料</li>
+                            <li class="payline-item text-dark font-weight-light px-4 px-2sm-10">付款資訊</li>
+                        </ul>
+                    </div>
+                    <!-- 商家照片資訊 -->
+                    <div class="col-lg-4 position-lg-absolute right-lg-0 mb-6 mb-md-5 order-2 order-md-1">
+                        <div class="form-row flex-row flex-lg-column align-items-center mb-lg-9">
+                            <div class="col-4 col-lg-12">
+                                <img class="reserve-img img-cover rounded mb-lg-2 w-100"
+                                    src="assets/images/homestay-3.jpeg" alt="照片">
+                            </div>
+                            <div class="col-8 col-lg-12">
+                                <div class="d-flex">
+                                    <h2 class="text-lg font-weight-bold mr-3">毛孩好家</h2>
+                                    <span class="text-warning d-block mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-map-marker-alt text-secondary mr-3 pt-1"></i>
+                                    <p class="mb-0">高雄市苓雅區、新興區、前鎮區</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secondary d-none d-lg-block w-100" href="reserve2.html">下一步</a>
+                    </div>
+                    <!-- Mobile 按鈕 -->
+                    <div class="col-12 d-block d-lg-none order-4">
+                        <a class="btn btn-secondary w-100" href="reserve2.html">下一步</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,83 @@
+---
+title: 付款資料
+loginMenu: true
+memberMenu: false
+Footer: false
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- py-11 py-md-13 pb-lg-15 -->
+<main class="bg-gray-530 px-4 d-flex align-items-center windows-100vh">
+    <section class="container rounded bg-gray-100 pt-13 pb-12">
+        <div class="row">
+            <div class="col">
+                <div class="row align-items-center position-relative">
+                    <!-- 付款資料 Title -->
+                    <div class="col-lg-8 mb-9 order-1 order-lg-0">
+                        <h1 class="text-xl font-weight-bold">付款資訊</h1>
+                    </div>
+                    <!-- Form -->
+                    <div class="col-lg-5 mb-3 mb-md-15 order-3 order-lg-1">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label class="text-dark" for="rservecardNum">信用卡帳號</label>
+                                <input type="number" class="form-control" id="rservecardNum" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-dark" for="rservecardDate">有效日期</label>
+                                <input type="month" class="form-control" id="rservecardDate" placeholder="(MM/YY)">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-dark" for="rservesafeNum">安全碼</label>
+                                <input type="password" class="form-control" id="rservesafeNum"
+                                    placeholder="***">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- payline -->
+                    <div class="col-lg-8 order-0 order-lg-2">
+                        <ul class="payline d-flex">
+                            <li class="payline-item text-dark font-weight-light px-4 px-2sm-10">預約項目</li>
+                            <li class="payline-item text-dark font-weight-light px-4 px-2sm-10">預約資料</li>
+                            <li class="payline-item text-dark font-weight-bold px-4 px-2sm-10">付款資訊</li>
+                        </ul>
+                    </div>
+                    <!-- 商家照片資訊 -->
+                    <div class="col-lg-4 position-lg-absolute right-lg-0 mb-6 mb-md-5 order-2">
+                        <div class="form-row flex-row flex-lg-column align-items-center mb-lg-9">
+                            <div class="col-4 col-lg-12">
+                                <img class="reserve-img img-cover rounded mb-lg-2 w-100"
+                                    src="assets/images/homestay-3.jpeg" alt="照片">
+                            </div>
+                            <div class="col-8 col-lg-12">
+                                <div class="d-flex">
+                                    <h2 class="text-lg font-weight-bold mr-3">毛孩好家</h2>
+                                    <span class="text-warning d-block mb-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-map-marker-alt text-secondary mr-3 pt-1"></i>
+                                    <p class="mb-0">高雄市苓雅區、新興區、前鎮區</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="text-secondary d-none d-lg-block text-center mb-4" href="reserve2.html">返回</a>
+                        <a class="btn btn-secondary d-none d-lg-block w-100" href="reserveSuccess.html">下一步</a>
+                    </div>
+                    <!-- Mobile 按鈕 -->
+                    <div class="col-12 d-block d-lg-none order-4">
+                        <a class="text-secondary text-center mb-4 w-100" href="reserve2.html">返回</a>
+                        <a class="btn btn-secondary w-100" href="reserveSuccess.html">下一步</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

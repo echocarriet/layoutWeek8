@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-2sm px-0 font-weight-medium fixed-top bg-white shadow-sm py-0">
+    <div class="container-fluid container-2sm">
+        <a class="logo navbar-brand d-block text-hide mx-auto" href="index.html">PETPET LOGO</a>
+        <button class="navbar-toggler text-warning position-absolute right-0 top-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item mr-2sm-11">
+                    <a class="nav-link text-primary text-center py-3 py-2sm-2 border-mobile" href="service.html">預約服務</a>
+                </li>
+                <li class="nav-item mr-2sm-11">
+                    <a class="nav-link text-primary text-center py-3 py-2sm-2 border-mobile" href="#">成為寵物保姆</a>
+                </li>
+                <% if (loginMenu) { %>
+                <%- include('loginMenu.ejs'); %>
+                <% } %>
+                
+                <% if (memberMenu) { %>
+                <%- include('memberMenu.ejs'); %>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>

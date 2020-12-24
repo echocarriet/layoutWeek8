@@ -1,0 +1,18 @@
+.logo{
+    background: url(/assets/images/logo.svg) no-repeat;
+    width: 121px;
+    height: 55px;
+}
+.logo2{
+    width: 121px;
+    height: 55px;
+}
+// navbar 手機裝置 border
+.border-mobile{
+    border-bottom:1px solid#DEDEDE;  
+    @include media-breakpoint-up(2sm) {        
+        border-bottom:1px solid transparent;      
+    }
+}
+
+

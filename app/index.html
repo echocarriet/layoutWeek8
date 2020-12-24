@@ -1,0 +1,295 @@
+---
+title: 首頁
+loginMenu: true
+memberMenu: false
+Footer: true
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<header class="container-fluid px-0 ">
+    <div class="row no-gutters">
+        <div class="col-md-5 mt-0 mt-2sm-16 mt-md-0 mb-3 mb-2sm-6 mb-md-0 d-flex justify-content-center">
+            <img class="header-img d-block img-cover w-100" src="assets/images/index-1.png"
+                alt="petpet banner">
+        </div>
+        <div class="col-md-7">
+            <div class="row no-gutters h-100 justify-content-center align-items-center">
+                <div class="col-2sm-8 col-3sm-7 col-md-10 text-center text-2sm-left">
+                    <h1 class="text-2xl text-md-3xl text-lg-5xl font-weight-bold mb-4">寵物服務，盡在 PETPET</h1>
+                    <h2 class="text-lg text-md-lg text-lg-xl font-weight-bold mb-3 mb-2sm-5 mb-md-12">
+                        當您的毛孩有需要時，
+                        <br class="d-inlined-block d-md-none">
+                        幫您找到最合適的服務者!
+                    </h2>
+                    <form class="d-flex justify-content-center" action="#">
+                        <div class="row no-gutters w-90 w-2sm-100">
+                            <div class="col-lg-2 mb-4 mb-2sm-3 mb-lg-0">
+                                <select class="form-controlClose form-border-tLbL text-gray-600 border-gray-400"
+                                    id="exampleFormControlSelect1">
+                                    <option selected="selected" disabled="disabled">品種</option>
+                                    <option>狗</option>
+                                    <option>貓</option>
+                                    <option>兔子</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-2sm-3 mb-lg-0">
+                                <select class="form-controlClose form-border-all text-gray-600 border-gray-400"
+                                    id="exampleFormControlSelect1">
+                                    <option selected="selected" disabled="disabled">服務</option>
+                                    <option>寵物寄宿</option>
+                                    <option>寵物到府保姆</option>
+                                    <option>寵物美容洗澡</option>
+                                    <option>寵物行為訓練</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 mb-4 mb-2sm-3 mb-lg-0">
+                                <select class="form-controlClose form-border-all text-gray-600 border-gray-400"
+                                    id="exampleFormControlSelect1">
+                                    <option selected="selected" disabled="disabled">地區</option>
+                                    <option>前鎮區</option>
+                                    <option>三民區</option>
+                                    <option>鹽埕區</option>
+                                    <option>左營區</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2">
+                                <button class="form-controlClose btn-secondary  form-border-tRbR w-100"
+                                    type="submit">搜尋</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="container-fluid container-2sm py-15" id="hotbabysitter">
+        <!-- hotbabysitter -->
+        <h3 class="3xl font-weight-bold">本月熱門保姆</h3>
+        <h4 class="text-lg mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆!</h4>
+        <!-- swiper 的Arrow 移出 swiper-container  定位於此↓區域 -->
+        <div class="container-fluid container-2sm py-12 position-relative">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-md px-1 pt-1">
+                            <div class="position-relative">
+                                <img src="assets/images/index-2.jpeg"
+                                    class="babysitter-img img-cover card-img-top mb-12" alt="保姆頭像背景圖">
+                                <img src="assets/images/person-1.png"
+                                    class="babysitter-personimg img-cover position-absolute" alt="保姆頭像">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Jamie</h5>
+                                <p class="card-text mb-3">寄宿、美容、寵物行為訓練</p>
+                                <a href="serviceDetail.html" class="btn btn-secondary py-2 w-50 mb-6">預約</a>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="mb-3">獲得評價</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">198</span>
+                                            <span>則</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-3">已完成訂單</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">590</span>
+                                            <span>件</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-md px-1 pt-1">
+                            <div class="position-relative">
+                                <img src="assets/images/index-3.jpeg"
+                                    class="babysitter-img img-cover card-img-top mb-12" alt="保姆頭像背景圖">
+                                <img src="assets/images/person-2.png"
+                                    class="babysitter-personimg img-cover position-absolute" alt="保姆頭像">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Eric</h5>
+                                <p class="card-text mb-3">寄宿、美容</p>
+                                <a href="serviceDetail.html" class="btn btn-secondary py-2 w-50 mb-6">預約</a>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="mb-3">獲得評價</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">76</span>
+                                            <span>則</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-3">已完成訂單</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">208</span>
+                                            <span>件</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-md px-1 pt-1">
+                            <div class="position-relative">
+                                <img src="assets/images/index-4.jpeg"
+                                    class="babysitter-img img-cover card-img-top mb-12" alt="保姆頭像背景圖">
+                                <img src="assets/images/person-3.png"
+                                    class="babysitter-personimg img-cover position-absolute" alt="保姆頭像">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Yvonne</h5>
+                                <p class="card-text mb-3">美容、寵物行為訓練</p>
+                                <a href="serviceDetail.html" class="btn btn-secondary py-2 w-50 mb-6">預約</a>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="mb-3">獲得評價</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">52</span>
+                                            <span>則</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-3">已完成訂單</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">196</span>
+                                            <span>件</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-md px-1 pt-1">
+                            <div class="position-relative">
+                                <img src="assets/images/index-10.jpg"
+                                    class="babysitter-img img-cover card-img-top mb-12" alt="保姆頭像背景圖">
+                                <img src="assets/images/person-3-1.png"
+                                    class="babysitter-personimg img-cover position-absolute" alt="保姆頭像">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Carrie</h5>
+                                <p class="card-text mb-3">寄宿、寵物行為訓練</p>
+                                <a href="serviceDetail.html" class="btn btn-secondary py-2 w-50 mb-6">預約</a>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="mb-3">獲得評價</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">250</span>
+                                            <span>則</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-3">已完成訂單</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="text-2xl font-weight-bold mr-1">600</span>
+                                            <span>件</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button swiper-button-next right-0"></div>
+            <div class="swiper-button swiper-button-prev d-none"></div>
+        </div>
+        <!-- 線上預約 -->
+        <h3 class="3xl font-weight-bold">線上預約</h3>
+        <h4 class="text-lg mb-12 mb-md-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆!</h4>
+        <ul class="form-row">
+            <li class="col-md-4">
+                <!-- 為了讓標題在最上層所以再用 a 包覆圖片與標題 -->
+                <a class="masonryCard-img d-block position-relative mb-1 mb-mb-0" href="#">
+                    <div class="bg-cover w-100 rounded bg-mask"
+                        style="background-image: url(assets/images/index-5.jpeg);"></div>
+                    <h5 class="masonryCard-title text-xl text-white font-weight-bold">寵物寄宿</h5>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a class="masonryCard-img d-block position-relative mb-1 mb-mb-0" href="#">
+                    <div class="bg-cover w-100 rounded bg-mask"
+                        style="background-image: url(assets/images/index-6.jpeg);"></div>
+                    <h5 class="masonryCard-title text-xl text-white font-weight-bold">寵物美容</h5>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <div class="d-flex flex-column masonryCard-imgSplit">
+                    <a class="masonryCard-imgSplit-item d-block position-relative mb-1 mb-md-2" href="#">
+                        <div class="bg-cover w-100 rounded bg-mask"
+                            style="background-image: url(assets/images/index-7.jpeg);"></div>
+                        <h5 class="masonryCard-title text-xl text-white font-weight-bold">到府服務</h5>
+                    </a>
+                    <a class="masonryCard-imgSplit-item d-block position-relative mb-1 mb-md-0" href="#">
+                        <div class="bg-cover w-100 rounded bg-mask"
+                            style="background-image: url(assets/images/index-8.jpeg);"></div>
+                        <h5 class="masonryCard-title text-xl text-white font-weight-bold">寵物寄宿</h5>
+                    </a>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <a class="masonryCard-img d-block position-relative" href="#">
+                    <div class="bg-cover rounded w-100 bg-mask"
+                        style="background-image: url(assets/images/index-3.jpeg);"></div>
+                    <h5 class="masonryCard-title text-xl text-white font-weight-bold">行為訓練</h5>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="onlinenumbrer-pic bg-cover pt-13 pt-md-15"
+        style="background-image: url(assets/images/index-9.jpeg);">
+        <div class="container-fluid container-2sm font-weight-bold">
+            <h3 class="text-5xl text-white mb-12 mb-3sm-16">PETPET目前已有</h3>
+            <div class="form-row text-white">
+                <div class="col-9 offset-3 offset-3sm-0 col-3sm-4 col-lg-3 mb-15 mb-md-0">
+                    <p class="border-left-sm mb-0">
+                        <span class="d-block text-6xl pl-4 mb-0">5278</span>
+                        <span class="d-block text-lg font-weight-medium mb-0 pl-4 pb-5 pb-md-15">人使用 PETPET</span>
+                    </p>
+                </div>
+                <div class="col-9 offset-3 offset-3sm-0 col-3sm-4 col-lg-3 mb-15 mb-md-0">
+                    <p class="border-left-sm mb-0">
+                        <span class="d-block text-6xl pl-4 mb-0">580</span>
+                        <span class="d-block text-lg font-weight-medium mb-0 pl-4 pb-5 pb-md-15">人成為寵物保母</span>
+                    </p>
+                </div>
+                <div class="col-9 offset-3 offset-3sm-0 col-3sm-4 col-lg-3 mb-15 mb-md-0">
+                    <p class="border-left-sm mb-0">
+                        <span class="d-block text-6xl pl-4 mb-0">10000+</span>
+                        <span class="d-block text-lg font-weight-medium mb-0 pl-4 pb-5 pb-md-15">已完成服務</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid container-2sm py-13 py-3sm-15">
+        <h3 class="text-3xl font-weight-bold">預約流程</h3>
+        <h4 class="text-lg mb-5">輕鬆三步驟，立即獲取最佳服務！</h4>
+        <ul class="row">
+            <li class="col-3sm-4 mb-9 mb-3sm-0">
+                <h5 class="text-lg">1.查詢想要的服務</h5>
+                <img class="img-cover w-100" src="assets/images/index-10.png" alt="查詢想要的服務">
+            </li>
+            <li class="col-3sm-4 mb-9 mb-3sm-0">
+                <h5 class="text-lg">2.找到合適的保姆</h5>
+                <img class="img-cover w-100" src="assets/images/index-11.png" alt="查詢想要的服務">
+            </li>
+            <li class="col-3sm-4">
+                <h5 class="text-lg">3.填寫資料完成預約</h5>
+                <img class="img-cover w-100" src="assets/images/index-12.png" alt="查詢想要的服務">
+            </li>
+        </ul>
+    </section>
+</main>
